@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search">
+      <div class="search-content">
+        <div class="search-top">
+          <h1>WELCOME</h1>
+          <div class="tambah-item">
+            <form>
+              <input
+                type="text"
+                id="tambahkan"
+                required
+                placeholder="Masukan nama barang"
+                autocomplete="off"
+              />
+              <button class="btn-tambah">Tambah</button>
+              <p class="error-barang">barang sudah ada di list</p>
+            </form>
+          </div>
+          <div class="search-item">
+            <input
+              type="text"
+              id="searchItem"
+              onkeyup="search()"
+              placeholder="Cari barang"
+            />
+            <p class="error-search">barang tidak ada di list</p>
+          </div>
+        </div>
+        <center>
+          <p>~ List Barang ~</p>
+        </center>
+        <div class="list-item" id="list-item">
+           
+          <!-- <div class="item">
+            <h5>1.</h5>
+            <h2>Buku Ajah</h2>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

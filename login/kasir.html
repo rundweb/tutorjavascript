@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Java Script</title>
+    <link rel="stylesheet" href="kasir.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-content">
+        <h1><strong>Login</strong></h1>
+        <form id="login-form">
+          <input
+            type="text"
+            id="username"
+            placeholder="Masukan username anda"
+            required
+            autocomplete="off"
+          />
+          <p class="error-usernamenya">username salah</p>
+          <input
+            type="password"
+            id="pasword"
+            placeholder="Masukan pasword anda"
+            required
+            autocomplete="off"
+          />
+          <p class="error-paswordnya">pasword salah</p>
+          <button class="btn-login">Login</button>
+          <p class="error">User tidak di temukan silahkan register</p>
+          <p class="text-regist">
+            Belum mempunyai akun ? <br />
+            <span class="btn-regist">Registrasi Disini</span>
+          </p>
+        </form>
+<!-- form regist -->
+        <form id="register-form">
+          <input
+            type="text"
+            id="usernamer"
+            placeholder="Masukan username anda"
+            required
+            autocomplete="off"
+          />
+          <p class="error-username">username sudah digunakan</p>
+          <input
+            type="password"
+            id="paswordr"
+            placeholder="Masukan pasword anda"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            id="confirmr"
+            placeholder="confirm pasword anda"
+            required
+            autocomplete="off"
+          />
+          <p class="error-pasword">pasword tidak sesuai</p>
+          <button class="btn-register">Register</button>
+          <p class="text-regist">
+            Sudah mempunyai akun ? <br />
+            <span class="btn-logon">Login Disini</span>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="kasir.js"></script>
+  </body>
+</html>

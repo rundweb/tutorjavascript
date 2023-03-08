@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 100px;
+    }
+    .note {
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 20px 20px #00000024;
+    }
+
+    .popup-box {
+      position: fixed;
+      background-color: aqua;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      
+    }
+
+    .popup-box.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header p{
+        cursor: pointer;
+    }
+
+    .aksi .aksi-btn{
+      display: none;
+    }
+
+    .aksi.show .aksi-btn{
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+  <body>
+    <div class="popup-box">
+      <div class="popup">
+        <header>
+          <h2>add</h2>
+          <p>close</p>
+        </header>
+        <form>
+          <div class="title">
+            <input type="text" />
+          </div>
+          <div class="desc">
+            <textarea rows="" cols="" class="textarea"></textarea>
+          </div>
+          <button>simpan</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="add-box">
+        <button class="icon">tambah</button>
+      </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
